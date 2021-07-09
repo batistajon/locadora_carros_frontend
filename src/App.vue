@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Jonathas Batista"/>
+    <nav-bar />
+    <div id="form" class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <login />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Login from './components/Login.vue';
+import NavBar from './components/NavBar.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Login,
+    NavBar
   }
 }
 </script>
@@ -23,6 +29,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+#form {
   margin-top: 60px;
 }
 </style>
